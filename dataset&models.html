@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Dataset and Models</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AILaw-Lab">
+      <meta name="author" content="">
+      <!-- Styles -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="css/theme.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <header class="jumbotron subhead" id="overview">
+            <h1>AILaw-Lab</h1>
+         </header>
+
+         <!-- Navigation Bar -->
+         <div class="masthead">
+            <div class="navbar">
+               <div class="navbar-inner">
+                  <div class="container">
+                     <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li class="active"><a href="#" style="white-space: nowrap;">Dataset and Models</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="r&dprojects.html" style="white-space: nowrap;">R&D Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+
+         <!-- Sidebar and Content -->
+         <div class="row-fluid">
+            <!-- Sidebar -->
+            <div class="span3 bs-docs-sidebar" id="navparent">
+               <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+                  <li><a href="#website">Website</a></li>
+                  <li><a href="#models">Models</a></li>
+                  <li><a href="#datasets">Datasets</a></li>
+                  <li><a href="#codedata">Code & Data</a></li>
+               </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="span8 offset1">
+
+               <!-- Website -->
+               <section id="website">
+                  <div class="page-header">
+                     <h3>Website</h3>
+                     <hr>
+                  </div>
+                  <ul>
+                     <li>
+                        <a href="https://exploration-lab.github.io/IL-TUR/" target="_blank">IL-TUR</a>
+                        <ul>
+                           <li>It contains monolingual (English, Hindi) and multi-lingual (9 Indian languages) domain-specific tasks from the point of view of understanding and reasoning over Indian legal documents.</li>
+                           <li>Supporting publication: IL-TUR: Benchmark for Indian Legal Text Understanding and Reasoning, ACL 2024.</li>
+                        </ul>
+                     </li>
+                  </ul>
+               </section>
+               <hr>
+
+               <!-- Models Section -->
+               <section id="models">
+                  <div class="page-header">
+                     <h3>Models</h3>
+                     <hr>
+                  </div>
+                  <ul>
+                     <li>
+                        <a href="https://huggingface.co/law-ai/InLegalBERT" target="_blank">InLegalBERT</a>
+                        <ul>
+                           <li>A transformer-based language model pretrained on extensive Indian legal texts to capture domain-specific linguistic patterns.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://huggingface.co/law-ai/InCaseLawBERT" target="_blank">InCaseLawBERT</a>
+                        <ul>
+                           <li>A specialized BERT model fine-tuned on Indian case law to enhance legal judgment understanding.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://huggingface.co/law-ai/CustomInLawBERT" target="_blank">CustomInLawBERT</a>
+                        <ul>
+                           <li>A tailored variant of LegalBERT further adapted on custom Indian legal datasets for task-specific applications.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://huggingface.co/law-ai/InLegalTrans-En2Indic-1B" target="_blank">InLegalTrans-En2Indic-1B</a>
+                        <ul>
+                           <li>A fine-tuned version of the IndicTrans2 model specifically tailored for translating Indian legal texts from English to Indian languages.</li>
+                        </ul>
+                     </li>
+                  </ul>
+               </section>
+               <hr>
+
+               <!-- Datasets Section -->
+               <section id="datasets">
+                  <div class="page-header">
+                     <h3>Datasets</h3>
+                     <hr>
+                  </div>
+                  <ul>
+                     <li>
+                        <a href="https://github.com/Law-AI/MILPaC" target="_blank">MILPaC</a>
+                        <ul>
+                           <li>The first dataset for evaluating Machine Translation systems on translating legal text from English to nine Indian languages.</li>
+                           <li>Can also be used to evaluate MT systems on translating from one Indian language to another.</li>
+                           <li>Supporting publication: MILPaC: A Novel Benchmark for Evaluating Translation of Legal Text to Indian Languages, ACM TALLIP, 2024.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://github.com/LegalDocumentProcessing/FIR_Dataset_ICDAR2023" target="_blank">TransDocAnalyser</a>
+                        <ul>
+                           <li>First hybrid (containing both handwritten and printed text) semi-structured document analysis dataset consisting of Indian legal documents (First Information Reports from several police stations).</li>
+                           <li>Can be used for document image segmentation, handwriting recognition, etc.</li>
+                           <li>Supporting publication: TransDocAnalyser: A framework for semi-structured offline handwritten documents analysis with an application to legal domain, ICDAR2023.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://github.com/Law-AI/document-similarity" target="_blank">Legal Case Document Similarity</a>
+                        <ul>
+                           <li>Two datasets for the task of estimating the semantic similarity between two court case judgements, in the range [0, 1].</li>
+                           <li>The datasets contain case document-pairs and a similarity value assigned by Law experts.</li>
+                           <li>Supporting publication: Legal Case Document Similarity: You Need Both Network and Text, Information Processing and Management, 2022.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://zenodo.org/records/4063986#.X3dDPMIzaUl" target="_blank">AILA</a>
+                        <ul>
+                           <li>Dataset for two tasks -- (1) Identifying relevant prior cases for a given situation, (2) Identifying most relevant statutes for a given situation.</li>
+                           <li>The datasets are based on legal documents (cases, statutes) from the Indian judicial system.</li>
+                           <li>Supporting publication: Overview of the FIRE 2019 AILA track:  Artificial Intelligence for Legal Assistance, FIRE 2019.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://www.isical.ac.in/~fire/data/2017/IRLeD/FIRE2017-IRLeD-track-data.zip" target="_blank">IRLed</a>
+                        <ul>
+                           <li>For two tasks -- (1) Catchphrase extraction from Indian legal documents, (2) Identifying prior cases relevant to a given case.</li>
+                           <li>Supporting publication: Overview of the FIRE 2017 IRLeD Track: Information Retrieval from Legal Documents, FIRE 2017.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://github.com/purbid/MARRO_Rhetorical-Role-Labeling" target="_blank">MARRO</a>
+                        <ul>
+                           <li>A dataset of more Indian Supreme Court judgements and a set of UK Supreme Court judgements, where the rhetorical role of every sentence is labeled (by Law students).</li>
+                           <li>Supporting publication: MARRO: Multi-headed Attention for Rhetorical Role Labeling in Legal Documents, Artificial Intelligence and Law, 2025.</li>
+                        </ul>
+                     </li>
+                  </ul>
+               </section>
+               <hr>
+               
+               <!-- Code & Data -->
+               <section id="codedata">
+                  <div class="page-header">
+                     <h3>Code & Data</h3>
+                     <hr>
+                  </div>
+                  <ul>
+                     <li>
+                        <a href="https://github.com/Law-AI/legal-statute-identification" target="_blank">Legal Statute Identification</a>
+                        <ul>
+                           <li>Identifies relevant statutes given the natural language (English) description of a situation. Experiments on Indian and European cases and statutes.</li>
+                           <li>Supporting publication: Legal Statute Identification: A Case Study using State-of-the-Art Datasets and Methods, SIGIR 2024.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://github.com/Law-AI/LeSICiN" target="_blank">LeSICiN</a>
+                        <ul>
+                           <li>Identifies relevant Indian Penal Code (IPC) Sections, given the natural language (English) description of a situation.</li>
+                           <li>Supporting publication: LeSICiN: A Heterogeneous Graph-based Approach for Automatic Legal Statute Identification from Indian Legal Documents, AAAI 2022.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://github.com/Law-AI/automatic-charge-identification" target="_blank">Automatic Charge Identification from Facts</a>
+                        <ul>
+                           <li>Identifies charges/crimes in Indian Penal Code, given the natural language (English) description of a situation.</li>
+                           <li>Supporting publication: Automatic Charge Identification from Facts: A Few Sentence-Level Charge Annotations is All You Need, COLING 2020.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://github.com/Law-AI/summarization" target="_blank">Summarization of court case judgements</a>
+                        <ul>
+                           <li>Three datasets for summarizing legal case judgements; implementations of several summarization algorithms and pretrained models for summarizing legal case judgements.</li>
+                           <li>Supporting publications: (1) A Comparative Study of Summarization Algorithms applied to Legal Case Judgements, ECIR 2019.</li>
+                           <li>Supporting publications: (2) Legal Case Document Summarization: Extractive and Abstractive Methods and their Evaluation, AACL-IJCNLP 2022.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://github.com/Law-AI/semantic-segmentation" target="_blank">Identifying the rhetorical role of sentences in court case judgements</a>
+                        <ul>
+                           <li>A dataset of 50 case judgments of the Indian Supreme Court, where the rhetorical role of every sentence is labeled (by Law students), and  implementation of our proposed model for identifying rhetorical role of sentences.</li>
+                           <li> Supporting publication: Identification of Rhetorical Roles of Sentences in Indian Legal Judgments, JURIX 2019.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://github.com/amarnamarpan/pslegal" target="_blank">Automatic Catchphrase Identification</a>
+                        <ul>
+                           <li>An unsupervised algorithm for extracting legal catchphrases from court case judgements.</li>
+                           <li>Supporting publication: Automatic Catchphrase Identification from Legal Court Case Documents, CIKM 2017.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="https://github.com/amarnamarpan/D2V-BiGRU-CRF" target="_blank">Catchphrase Identification</a>
+                        <ul>
+                           <li>A supervised algorithm for extracting legal catchphrases from court case judgements.</li>
+                           <li>Supporting publication: A Sequence Labeling Model for Catchphrase Identification from Legal Case Documents. Artificial Intelligence and Law, 2021.</li>
+                        </ul>
+                     </li>
+                  </ul>
+               </section>
+               <hr>
+
+            </div>
+         </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+         <div class="container-fluid">
+            <div class="row-fluid">
+               <div class="span5">
+                  <h3>Contact Information</h3>
+                  <p><b>Office Hours: </b>Monday-Friday (9:00am - 5:00pm)</p>
+                  <a href="lab4.ailaw@gmail.com">lab4.ailaw@gmail.com</a>
+               </div>
+               <div class="span2">
+                  <h3>© 2025 AILaw-Lab</h3>
+                  <p><b>All rights reserved</p>
+               </div>
+               <div class="span5">
+                  <h3>Address</h3>
+                  <p>Department of Computer Science and Engineering<br>
+                     Ardeshir Dalal Ave<br>
+                     Indian Institute of Technology Kharagpur<br>
+                     Kharagpur, West Bengal<br>
+                     India, PIN - 721302
+                  </p>
+                  <a href="https://maps.app.goo.gl/EaZTYASogYySLNDL6">Show Map</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- Scripts -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function() {
+             $(document.body).scrollspy({
+                 target: "#navparent"
+             });
+         });
+      </script>
+   </body>
+</html>
