@@ -556,3 +556,6 @@ ul.sponsors {
 	color: #8F8F8F;
 	font-size: 11px;
 }
+#navparent {
+    width: 150px; /* adjust as needed */
+}
