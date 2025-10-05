@@ -73,22 +73,57 @@
                               <a href="https://huggingface.co/law-ai/InLegalBERT" target="_blank">InLegalBERT</a>
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              Transformer-based language model pretrained on extensive Indian legal texts.
+                              A transformer-based language model pretrained on extensive Indian legal texts to capture domain-specific linguistic patterns.
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              —
+                              Pre-trained Language Models for the Legal Domain: A Case Study on Indian Law, ICAIL 2023.<a href="https://arxiv.org/abs/2209.06049" target="_blank"> [Link]</a>
                            </td>
                         </tr>
 
                         <tr>
                            <td style="padding:10px; border:1px solid #ddd;">
+                              <a href="https://huggingface.co/law-ai/InCaseLawBERT" target="_blank">InCaseLawBERT</a>
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              A specialized BERT model fine-tuned on Indian case law to enhance legal judgment understanding.
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              Pre-trained Language Models for the Legal Domain: A Case Study on Indian Law, ICAIL 2023.<a href="https://arxiv.org/abs/2209.06049" target="_blank"> [Link]</a>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              <a href="https://huggingface.co/law-ai/CustomInLawBERT" target="_blank">CustomInLawBERT</a>
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              A tailored variant of LegalBERT further adapted on custom Indian legal datasets for task-specific applications.
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              Pre-trained Language Models for the Legal Domain: A Case Study on Indian Law, ICAIL 2023.<a href="https://arxiv.org/abs/2209.06049" target="_blank"> [Link]</a>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              <a href="https://huggingface.co/law-ai/InLegalTrans-En2Indic-1B" target="_blank">InLegalTrans-En2Indic-1B</a>
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              A fine-tuned version of the IndicTrans2 model specifically tailored for translating Indian legal texts from English to Indian languages.
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              MILPaC: A Novel Benchmark for Evaluating Translation of Legal Text to Indian Languages, ACM TALLIP 2024.<a href="https://dl.acm.org/doi/pdf/10.1145/3748313" target="_blank"> [Link]</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="padding:10px; border:1px solid #ddd;">
                               <a href="https://github.com/Law-AI/MILPaC" target="_blank">MILPaC</a>
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              Dataset for evaluating MT systems on translating legal text from English to nine Indian languages.
+                              The first dataset for evaluating Machine Translation systems on translating legal text from English to nine Indian languages. Can also be used to evaluate MT systems on translating from one Indian language to another.
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              MILPaC: A Novel Benchmark for Evaluating Translation of Legal Text to Indian Languages, ACM TALLIP 2024.
+                              MILPaC: A Novel Benchmark for Evaluating Translation of Legal Text to Indian Languages, ACM TALLIP 2024.<a href="https://dl.acm.org/doi/pdf/10.1145/3748313" target="_blank"> [Link]</a>
                            </td>
                         </tr>
 
@@ -97,10 +132,69 @@
                               <a href="https://github.com/LegalDocumentProcessing/FIR_Dataset_ICDAR2023" target="_blank">TransDocAnalyser</a>
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              Dataset for hybrid handwritten and printed text document analysis in Indian legal domain.
+                              First hybrid (containing both handwritten and printed text) semi-structured document analysis dataset consisting of Indian legal documents (First Information Reports from several police stations). Can be used for document image segmentation, handwriting recognition, etc.
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              TransDocAnalyser: ICDAR 2023.
+                              TransDocAnalyser: A framework for semi-structured offline handwritten documents analysis with an application to legal domain, ICDAR 2023.<a href="https://link.springer.com/chapter/10.1007/978-3-031-41676-7_3" target="_blank"> [Link]</a>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              <a href="https://github.com/Law-AI/document-similarity" target="_blank">Legal Case Document Similarity</a>
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              Two datasets for the task of estimating the semantic similarity between two court case judgements, in the range [0, 1]. The datasets contain case document-pairs and a similarity value assigned by Law experts.
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              Legal Case Document Similarity: You Need Both Network and Text, Information Processing and Management 2022.<a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457322001716?via%3Dihub" target="_blank"> [Link]</a>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              <a href="https://zenodo.org/records/4063986#.X3dDPMIzaUl" target="_blank">AILA</a>
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              Dataset for two tasks -- (1) Identifying relevant prior cases for a given situation, (2) Identifying most relevant statutes for a given situation. The datasets are based on legal documents (cases, statutes) from the Indian judicial system.
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              Overview of the FIRE 2019 AILA track: Artificial Intelligence for Legal Assistance, FIRE 2019.<a href="https://dl.acm.org/doi/10.1145/3368567.3368587" target="_blank"> [Link]</a>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              <a href="https://www.isical.ac.in/~fire/data/2017/IRLeD/FIRE2017-IRLeD-track-data.zip" target="_blank">IRLed</a>
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              For two tasks -- (1) Catchphrase extraction from Indian legal documents, (2) Identifying prior cases relevant to a given case.
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              Overview of the FIRE 2017 IRLeD Track: Information Retrieval from Legal Documents, FIRE 2017.<a href="https://ceur-ws.org/Vol-2036/T3-1.pdf" target="_blank"> [Link]</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              <a href="https://github.com/purbid/MARRO_Rhetorical-Role-Labeling" target="_blank">MARRO</a>
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              A dataset of more Indian Supreme Court judgements and a set of UK Supreme Court judgements, where the rhetorical role of every sentence is labeled (by Law students).
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              MARRO: Multi-headed Attention for Rhetorical Role Labeling in Legal Documents, Artificial Intelligence and Law 2025.<a href="https://arxiv.org/pdf/2503.10659" target="_blank"> [Link]</a>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              <a href="https://github.com/Law-AI/legal-statute-identification" target="_blank">Legal Statute Identification</a>
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              Identifies relevant statutes given the natural language (English) description of a situation. Experiments on Indian and European cases and statutes.
+                           </td>
+                           <td style="padding:10px; border:1px solid #ddd;">
+                              Legal Statute Identification: A Case Study using State-of-the-Art Datasets and Methods, SIGIR 2024.<a href="https://dl.acm.org/doi/pdf/10.1145/3626772.3657879" target="_blank"> [Link]</a>
                            </td>
                         </tr>
 
@@ -109,128 +203,71 @@
                               <a href="https://github.com/Law-AI/LeSICiN" target="_blank">LeSICiN</a>
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              Identifies relevant IPC sections given English description of a situation using a heterogeneous graph approach.
+                              Identifies relevant Indian Penal Code (IPC) Sections, given the natural language (English) description of a situation.
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              AAAI 2022.
-                           </td>
-                        </tr>
-                        <tr>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              <a href="https://exploration-lab.github.io/IL-TUR/" target="_blank">IL-TUR</a>
-                           </td>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              Monolingual (English, Hindi) and multilingual (9 Indian languages) benchmark for understanding and reasoning over Indian legal documents.
-                           </td>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              IL-TUR: Benchmark for Indian Legal Text Understanding and Reasoning, ACL 2024.
+                              LeSICiN: A Heterogeneous Graph-based Approach for Automatic Legal Statute Identification from Indian Legal Documents, AAAI 2022.<a href="https://cdn.aaai.org/ojs/21363/21363-13-25376-1-2-20220628.pdf" target="_blank"> [Link]</a>
                            </td>
                         </tr>
 
                         <tr>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              <a href="https://huggingface.co/law-ai/InLegalBERT" target="_blank">InLegalBERT</a>
+                              <a href="https://github.com/Law-AI/automatic-charge-identification" target="_blank">Automatic Charge Identification from Facts</a>
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              Transformer-based language model pretrained on extensive Indian legal texts.
+                              Identifies charges/crimes in Indian Penal Code, given the natural language (English) description of a situation.
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              —
-                           </td>
-                        </tr>
-
-                        <tr>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              <a href="https://github.com/Law-AI/MILPaC" target="_blank">MILPaC</a>
-                           </td>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              Dataset for evaluating MT systems on translating legal text from English to nine Indian languages.
-                           </td>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              MILPaC: A Novel Benchmark for Evaluating Translation of Legal Text to Indian Languages, ACM TALLIP 2024.
+                              Automatic Charge Identification from Facts: A Few Sentence-Level Charge Annotations is All You Need, COLING 2020.<a href="https://aclanthology.org/2020.coling-main.88.pdf" target="_blank"> [Link]</a>
                            </td>
                         </tr>
 
                         <tr>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              <a href="https://github.com/LegalDocumentProcessing/FIR_Dataset_ICDAR2023" target="_blank">TransDocAnalyser</a>
+                              <a href="https://github.com/Law-AI/summarization" target="_blank">Summarization of court case judgements</a>
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              Dataset for hybrid handwritten and printed text document analysis in Indian legal domain.
+                              Three datasets for summarizing legal case judgements; implementations of several summarization algorithms and pretrained models for summarizing legal case judgements.
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              TransDocAnalyser: ICDAR 2023.
-                           </td>
-                        </tr>
-
-                        <tr>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              <a href="https://github.com/Law-AI/LeSICiN" target="_blank">LeSICiN</a>
-                           </td>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              Identifies relevant IPC sections given English description of a situation using a heterogeneous graph approach.
-                           </td>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              AAAI 2022.
-                           </td>
-                        </tr>
-                        <tr>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              <a href="https://exploration-lab.github.io/IL-TUR/" target="_blank">IL-TUR</a>
-                           </td>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              Monolingual (English, Hindi) and multilingual (9 Indian languages) benchmark for understanding and reasoning over Indian legal documents.
-                           </td>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              IL-TUR: Benchmark for Indian Legal Text Understanding and Reasoning, ACL 2024.
+                              A Comparative Study of Summarization Algorithms applied to Legal Case Judgements, ECIR 2019.<a href="https://link.springer.com/chapter/10.1007/978-3-030-15712-8_27" target="_blank"> [Link]</a>
+                              Legal Case Document Summarization: Extractive and Abstractive Methods and their Evaluation, AACL-IJCNLP 2022.<a href="https://aclanthology.org/2022.aacl-main.77.pdf" target="_blank"> [Link]</a>
                            </td>
                         </tr>
 
                         <tr>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              <a href="https://huggingface.co/law-ai/InLegalBERT" target="_blank">InLegalBERT</a>
+                              <a href="https://github.com/Law-AI/semantic-segmentation" target="_blank">Identifying the rhetorical role of sentences in court case judgements</a>
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              Transformer-based language model pretrained on extensive Indian legal texts.
+                              A dataset of 50 case judgments of the Indian Supreme Court, where the rhetorical role of every sentence is labeled (by Law students), and implementation of our proposed model for identifying rhetorical role of sentences.
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              —
-                           </td>
-                        </tr>
-
-                        <tr>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              <a href="https://github.com/Law-AI/MILPaC" target="_blank">MILPaC</a>
-                           </td>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              Dataset for evaluating MT systems on translating legal text from English to nine Indian languages.
-                           </td>
-                           <td style="padding:10px; border:1px solid #ddd;">
-                              MILPaC: A Novel Benchmark for Evaluating Translation of Legal Text to Indian Languages, ACM TALLIP 2024.
+                              Identification of Rhetorical Roles of Sentences in Indian Legal Judgments, JURIX 2019.<a href="https://arxiv.org/pdf/1911.05405" target="_blank"> [Link]</a>
                            </td>
                         </tr>
 
                         <tr>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              <a href="https://github.com/LegalDocumentProcessing/FIR_Dataset_ICDAR2023" target="_blank">TransDocAnalyser</a>
+                              <a href="https://github.com/amarnamarpan/pslegal" target="_blank">Automatic Catchphrase Identification</a>
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              Dataset for hybrid handwritten and printed text document analysis in Indian legal domain.
+                              An unsupervised algorithm for extracting legal catchphrases from court case judgements.
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              TransDocAnalyser: ICDAR 2023.
+                              Automatic Catchphrase Identification from Legal Court Case Documents, CIKM 2017.<a href="https://dl.acm.org/doi/10.1145/3132847.3133102" target="_blank"> [Link]</a>
                            </td>
                         </tr>
 
                         <tr>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              <a href="https://github.com/Law-AI/LeSICiN" target="_blank">LeSICiN</a>
+                              <a href="https://github.com/amarnamarpan/D2V-BiGRU-CRF" target="_blank">Catchphrase Identification</a>
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              Identifies relevant IPC sections given English description of a situation using a heterogeneous graph approach.
+                              A supervised algorithm for extracting legal catchphrases from court case judgements.
                            </td>
                            <td style="padding:10px; border:1px solid #ddd;">
-                              AAAI 2022.
+                              A Sequence Labeling Model for Catchphrase Identification from Legal Case Documents. Artificial Intelligence and Law 2021.<a href="https://link.springer.com/article/10.1007/s10506-021-09296-2" target="_blank"> [Link]</a>
                            </td>
                         </tr>
                      </tbody>
