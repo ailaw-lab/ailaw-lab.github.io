@@ -499,6 +499,7 @@ li.publication {
 
 .page-header h3 a:hover {
 	text-decoration: none;
+	font-size: 16px;
 }
 
 iframe.map-frame {
