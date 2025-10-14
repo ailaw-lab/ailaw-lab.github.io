@@ -30,6 +30,17 @@
             border-radius: 50%;
             margin-bottom: 15px;
          }
+         .highlight-news li {
+            background: #f0f8ff;
+            border-left: 4px solid #007bff;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            transition: 0.3s;
+         }
+         .highlight-news li:hover {
+            background: #e8f0fe;
+         }
       </style>
    </head>
    <body>
@@ -138,9 +149,22 @@
                <p>Intelligent and fast access to relevant precedents.</p>
             </div>
          </div>
+
          
 
-
+         <!-- News Highlight Boxes -->
+         <div class="row-fluid">
+            <div class="span12">
+               <h2 class="section-heading">Recent News</h2>
+               <ul class="highlight-news">
+                  <li>Co-organizing the Workshop <b>JustNLP</b> (Workshop on NLP for Empowering Justice) with <b>IJCNLP-AACL 2025</b>. Please consider submitting your work. Workshop website - <a href="https://exploration-lab.github.io/JUST-NLP/"> [Link]</a></li>
+                  <li>Paper accepted at <b>EMNLP 2025</b> Main conference: IL-PCSR: Legal Corpus for Prior Case and Statute Retrieval.</li>
+                  <li>Our Language Model pre-trained on Indian legal text <b>InLegalBERT</b> reaches 1.75 million downloads on Huggingface !!</li>
+                  <li>Paper accepted at <b>ACL 2024</b> Main conference: IL-TUR: Benchmark for Indian Legal Text Understanding and Reasoning.</li>
+                  <li>Paper accepted in <b>Artificial Intelligence and Law journal</b>: Applicability of Large Language Models and Generative Models for Legal Case Judgement Summarization.</li>
+               </ul>
+            </div>
+         </div>
 
          <hr>
       </div>
