@@ -41,6 +41,30 @@
          .highlight-news li:hover {
             background: #e8f0fe;
          }
+         .news-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+         }
+         .card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 calc(45%);
+            text-align: center; 
+         }
+         .card h4 {
+            color: #007bff;
+            margin-bottom: 5px;
+         }
+         .news-ticker {
+            background: #007bff;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            font-weight: bold;
+         }
       </style>
    </head>
    <body>
@@ -98,6 +122,15 @@
 
          <hr>
 
+         <!-- News Ticker -->
+         <div class="news-ticker">
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+               🔹 Co-organizing the Workshop <b>JustNLP</b>  🔹 Paper accepted at <b>EMNLP 2025</b>  🔹 <b>InLegalBERT</b> reaches 1.75 million downloads  🔹 Paper accepted at <b>ACL 2024</b>  🔹 Paper accepted in <b>Artificial Intelligence and Law journal</b>
+            </marquee>
+         </div>
+
+
+         
          <!-- About the Lab Section -->
          <div class="row-fluid">
             <div class="span12">
@@ -110,6 +143,8 @@
 
          <hr>
 
+         
+
          <!-- Expertise -->
          <div class="row-fluid">
             <div class="span12">
@@ -117,40 +152,34 @@
                <p class="intro-text">
                   Our mission is to bridge the gap between Law and Technology, making legal processes smarter, faster, accessible and more transparent.
                </p>
+               <div class="news-cards">
+                  <div class="card">
+                     <h4>Legal Document Summarization</h4>
+                     <p>Turning lengthy judgments and statutes into concise summaries</p>
+                  </div>
+                  <div class="card">
+                     <h4>Legal Text Translation</h4>
+                     <p>Making legal language more understandable for the Indian population</p>
+                  </div>
+                  <div class="card">
+                     <h4>Rhetorical Role Labelling</h4>
+                     <p>Identifying the semantic segments in a judgement for structured analysis</p>
+                  </div>
+                  <div class="card">
+                     <h4>Statute Identification</h4>
+                     <p>Automatically detecting and linking relevant statutory provisions</p>
+                  </div>
+                  <div class="card">
+                     <h4>Legal Question Answering</h4>
+                     <p>Generating accurate responses to legal queries</p>
+                  </div>
+                  <div class="card">
+                     <h4>Case Law Retrieval</h4>
+                     <p>Intelligent and fast access to relevant precedents</p>
+                  </div>
+               </div>
             </div>
          </div>
-
-         <!-- Expertise -->
-         <div class="row-fluid">
-            <div class="span4 person-card">
-               <h4>Legal Document Summarization</h4>
-               <p>Turning lengthy judgments and statutes into concise summaries.</p>
-            </div>
-            <div class="span4 person-card">
-               <h4>Legal Text Translation</h4>
-               <p>Making legal language more understandable for the Indian population.</p>
-            </div>
-            <div class="span4 person-card">
-               <h4>Rhetorical Role Labelling</h4>
-               <p>Identifying the semantic segments in a judgement for structured analysis.</p>
-            </div>
-         </div>
-         <div class="row-fluid">
-            <div class="span4 person-card">
-               <h4>Statute Identification</h4>
-               <p>Automatically detecting and linking relevant statutory provisions.</p>
-            </div>
-            <div class="span4 person-card">
-               <h4>Legal Question Answering</h4>
-               <p>Generating accurate responses to legal queries.</p>
-            </div>
-            <div class="span4 person-card">
-               <h4>Case Law Retrieval</h4>
-               <p>Intelligent and fast access to relevant precedents.</p>
-            </div>
-         </div>
-
-         
 
          <!-- News Highlight Boxes -->
          <div class="row-fluid">
